@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'BCcardB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.1/BCcardB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #543939;
+    cursor: url(../mainpage_images/mousehover.png), auto;
+}
+body{
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    line-height: 20px;
+    color: #543939;
+    min-width: 1320px;
+    cursor: url(../mainpage_images/mouse.png), auto; 
+    
+}
+h1, h3, h4{
+    font-family: 'BCcardB';
+}
+
+/* header */
+#header{
+    width: 1320px;
+    height: 130px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    padding-top: 20px;
+}
+.h_right{
+    float: right;
+}
+.link{
+    padding-top: 10px;
+    padding-left: 500px;
+    overflow: hidden;
+    
+}
+.link li{
+    float: left;
+    color: #999;
+    
+}
+.link li a{
+    color: #999;
+    font-size: 14px;
+}
+.link li a:hover{
+    color: #543939;
+    text-decoration: underline;
+}
+.nav{
+    height: 100px;
+}
+.nav> li{
+    float: left;
+    position: relative;
+}
+.nav> li> a{
+    padding: 40px 30px 42px;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    font-family: 'BCcardB';    
+}
+.h_right .nav> li:hover> a{
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px rgba(84, 57, 57, 0.5);
+    
+}
+/* 서브메뉴 */
+.sub a{
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 20px 0;  
+    transition: all 0.5s;
+}
+.sub a:hover{
+    background-color: #e3d0b2;
+    color: #543939;
+}
+.sub{
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+
+}
+.nav li:hover .sub{
+    display: block;
+}
+
+
+
+/* 브랜드 소개 */
+.bg1{
+    background: url(../mainpage_images/shadow_background.jpg) no-repeat center 0;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+.gif{
+    margin: 0 auto;
+    width: 1165px;
+    height: 1107px;
+    position: relative;
+    
+}
+.slide{
+    float: left;
+    padding-top: 150px;
+
+    
+}
+.text_right{
+    float: right;
+    padding: 470px 30px 0;
+    
+}
+.bold{
+    font-weight: bold;
+}
+.text_right p:nth-child(2){
+    padding-top: 121px;
+    line-height: 40px;
+}
+.text_right p:nth-child(3){
+     position: absolute;
+    top:900px; 
+    right: 0;
+}
+
+.text_right a{
+    border-radius:10px 10px 10px 10px;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #543939;
+    color:#fff;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 10px 10px 0 #97bfce93;
+    transition: all 0.5s;
+}
+.text_right a:hover{
+    color: #543939;
+    background-color: #e3d0b2;
+    box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.5);
+    transform: translate(10px, 10px);
+}
+
+/* 영상 */
+.video{
+    width: 1320px;
+    /* height: 640px; */
+    margin: 100px auto;
+    
+
+}
+
+/* 시그니처 */
+.bg2{
+    background: url(../mainpage_images/product_background.jpg) no-repeat center 0;
+    background-size: cover;
+    height: 893px;
+}
+.bg2_inner{
+    margin: 0 auto;
+    width: 1320px;
+    
+}
+.bg2_inner h1{
+    text-align: center;
+    padding-top: 70px;
+    background: url(../mainpage_images/flowers.png) no-repeat 62% 30%;
+}
+.bg2 ul{
+    overflow: hidden;
+}
+.bg2_inner li{
+    float: left;
+    
+}
+.center{
+    margin: 0px 195px;
+}
+.bg2_inner div{
+    margin-top: 94px;
+    overflow: hidden;
+    border-radius: 50px 0px 0px 0px;
+}
+.bg2_inner h3{
+    padding: 34px 0px;
+    text-align: center;
+   
+}
+.bg2_inner li:hover h3{
+    color: #e3d0b2;
+}
+.bg2_inner p{
+    text-align: center;
+    line-height: 30px;
+}
+.card img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.card{
+    position: relative;
+}
+
+.card:hover img{
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+.bg2_inner img{
+    display: block;
+    transition: all 1s;
+
+}
+.bg2_inner .button{
+    background-color: #543939;
+    color: #fff;
+    border-radius:10px 10px 10px 10px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 7px;
+    margin-top: 70px;
+    text-decoration: none;
+    box-shadow: 10px 10px 0 #97bfce93;
+    transition: all 0.5s;
+}
+.bg2_inner .button:hover{
+    color: #543939;
+    background-color: #e3d0b2;
+    box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.5);
+    transform: translate(10px, 10px);
+}
+
+/* 퓨전바 */
+.bar{
+    width: 100%;
+    /* height: 651px */
+}
+.bar2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.bar2 img{
+    padding-bottom: 20px;
+}
+.bar2 h4{
+    font-size: 40px;
+    line-height: 50px;
+}
+.color{
+    color: #f8dddd;
+}
+.bar2 a{
+    background-color: #543939;
+    color: #fff;
+    border-radius:10px 10px 10px 10px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+.bar2 a:hover{
+    color: #543939;
+    background-color: #e3d0b2;
+    box-shadow: 0px 0px 0 #543939;
+    transform: translate(10px, 10px);
+}
+
+
+/* 푸터 */
+.footer_inner{
+    margin: 0 auto;
+    width: 100%;
+    background: url(../mainpage_images/wave_footer.png) no-repeat 50% 0;
+    background-size: cover;
+    animation: wave 10s infinite alternate linear ;
+    height: 482px;
+    text-align: center;
+    margin-top: 70px;
+}
+@keyframes wave{
+    0%{background-position: 50% 0;}
+    100%{background-position: 0% 0px;}
+}
+.footer_inner ul{
+    padding-top: 30px;
+}
+.f_logo img{
+    padding-top: 130px;
+}
+.sns li{
+    float: left;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+.sns li a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    opacity: 0.5;
+}
+.sns li:nth-child(1) a{
+    background: url(../mainpage_images/facebook.png) no-repeat;
+}
+.sns li:nth-child(2) a{
+    background: url(../mainpage_images/instagram.png) no-repeat;
+}
+.sns li:nth-child(3) a{
+    background: url(../mainpage_images/youtube.png) no-repeat;
+}
+.sns li:hover a{
+    opacity: 1;
+}
+.link2 li:hover a{
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px rgba(84, 57, 57, 0.6);
+}
+.link2 li, .link a{
+    color: #543939;
+}
+.footer_inner ul{
+    display: inline-block;
+}
+.link2 li{
+    float: left;
+}
+.link3 li{
+    float: left;
+    
+}
+.link3{
+    text-align: center;
+    padding: 0px 30px;
+    
+}
+.line{
+    padding: 0px 20px;
+}
+/* top 버튼 */
+.top {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 100;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.top img{
+    display: block;
+}

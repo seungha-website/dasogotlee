@@ -1,0 +1,455 @@
+@font-face {
+    font-family: 'BCcardB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.1/BCcardB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #543939;
+    cursor: url(../mainpage_images/mousehover.png), auto; 
+}
+body{
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    line-height: 20px;
+    color: #543939;
+    min-width: 1320px;
+    cursor: url(../mainpage_images/mouse.png), auto; 
+    
+}
+
+h1, h3, h4{
+    font-family: 'BCcardB';
+}
+
+
+/* header */
+#header{
+    width: 1320px;
+    height: 130px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    padding-top: 20px;
+}
+.h_right{
+    float: right;
+}
+.link{
+    padding-top: 10px;
+    padding-left: 500px;
+    overflow: hidden;
+    
+}
+.link li{
+    float: left;
+    color: #999;
+    
+}
+.link li a{
+    color: #999;
+    font-size: 14px;
+}
+.link li a:hover{
+    color: #543939;
+    text-decoration: underline;
+}
+.nav{
+    height: 100px;
+}
+.nav> li{
+    float: left;
+    position: relative;
+}
+.nav> li> a{
+    padding: 40px 30px 42px;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    font-family: 'BCcardB';    
+}
+.h_right .nav> li:hover> a{
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px rgba(84, 57, 57, 0.5);
+    
+}
+/* 서브메뉴 */
+.sub a{
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 20px 0;  
+    transition: all 0.5s;
+}
+.sub a:hover{
+    background-color: #e3d0b2;
+    color: #543939;
+}
+.sub{
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+
+}
+.nav li:hover .sub{
+    display: block;
+}
+
+
+/* 브랜드 이미지 */
+
+.brand img{
+    width: 100%;
+    display: block;
+}
+.brand_bg{
+    background: url(../brandpage_images/brand_bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.brand_1{
+    width: 1320px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.box1{
+    float: left;
+    width: 650px;
+    height: 650px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 110px;
+    margin-top: 250px;
+}
+.box1 h1{
+    font-size: 50px;
+    line-height: 70px;
+    padding-bottom: 20px;
+}
+.box1 p{
+    line-height: 55px;
+    font-weight: bold;
+}
+.img1{
+    width: 650px;
+    height: 650px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 250px;
+    float: right;
+}
+.img2{
+    width: 650px;
+    height: 650px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 290px;
+    float: left;
+}
+.box2{
+    float: right;
+    width: 650px;
+    height: 650px;
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 300px;
+    padding-left: 110px;
+}
+.box2 h1{
+    font-size: 50px;
+    line-height: 70px;
+    padding-bottom: 20px;
+}
+.box2 p{
+    line-height: 55px;
+    font-weight: bold;
+}
+
+/* 다소곳이 소개 */
+.brand_2{
+    width: 1320px;
+    height: 933px;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+    margin-top: 200px;
+    
+}
+.bg1{
+    background: url(../brandpage_images/brand_bottle.png) no-repeat;
+    width: 932px;
+    height: 933px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg1 p{
+    line-height: 55px;
+    font-weight: bold;
+    padding-top: 240px;
+    margin-right: 290px;
+}
+.bg2{
+    padding-top: 1px;
+    padding: 150px 70px 0px 0px;   
+}
+.bg2 h1{
+    line-height: 70px;
+    font-size: 50px;
+    padding-right: 78px;
+}
+.bg2 img{
+    float: right;
+}
+/* 고광 꽃 소개 */
+.brand_3{
+    width: 1320px;
+    height: 933px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.flower{
+    background: url(../brandpage_images/brand_flower.png) no-repeat;
+    width: 1254px;
+    height: 816px;
+    
+}
+.flower_inner{
+    padding: 190px 0px 0px 626px;
+    text-align: left;
+}
+.flower_inner h1{
+    line-height: 70px;
+    padding-bottom: 40px;
+    font-size: 50px;
+}
+.flower_inner p{
+    line-height: 30px;
+    
+}
+
+/* 다소곳이의 가치 */
+.value{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.value img{
+    width: 566px;
+    height: 191px;
+}
+
+/* 가치 설명 */
+
+/* 사람 */
+.value_icon{
+    width: 930px;
+    height: 930px;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+.people{
+    width: 465px;
+    height: 465px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(243, 215, 214, 0.4);
+    position: absolute;
+    top: -30px;
+    left: 25%;
+    margin-top: 100px;
+}
+.people img{
+    padding: 50px 0px 40px 0px;
+}
+.people h1{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.people p{
+    line-height: 30px;
+}
+
+/* 막걸리 */
+.ricewine{
+    width: 465px;
+    height: 465px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(230, 208, 193, 0.4);
+    position: absolute;
+    bottom: 170px;
+    left: 6%;
+    margin-top: 100px;
+}
+.ricewine img{
+    padding: 100px 0px 40px 0px;
+}
+.ricewine h1{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.ricewine p{
+    line-height: 30px;
+}
+
+/* 대화 */
+.comuication{
+    width: 465px;
+    height: 465px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(182, 223, 231, 0.4);
+    position: absolute;
+    bottom: 170px;
+    right: 6%;
+    margin-top: 100px;
+}
+.comuication img{
+    padding: 100px 0px 40px 0px;
+}
+.comuication h1{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.comuication p{
+    line-height: 30px;
+}
+.value_icon .button{
+    background-color: #543939;
+    color: #fff;
+    border-radius:10px 10px 10px 10px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 7px;
+    margin-left: 402px;
+    margin-top: 850px;
+    text-decoration: none;
+    box-shadow: 10px 10px 0 #97bfce93;
+    transition: all 0.5s;
+}
+.value_icon .button:hover{
+    color: #543939;
+    background-color: #e3d0b2;
+    box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.5);
+    transform: translate(10px, 10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+.footer_inner{
+    margin: 0 auto;
+    width: 100%;
+    background: url(../mainpage_images/wave_footer.png) no-repeat 50% 0;
+    background-size: cover;
+    animation: wave 8s infinite alternate linear ;
+    height: 482px;
+    text-align: center;
+    margin-top: 70px;
+}
+@keyframes wave{
+    0%{background-position: 50% 0;}
+    100%{background-position: 0% 0px;}
+}
+.footer_inner ul{
+    padding-top: 30px;
+}
+.f_logo img{
+    padding-top: 130px;
+}
+.sns li{
+    float: left;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+.sns li a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    opacity: 0.5;
+}
+.sns li:nth-child(1) a{
+    background: url(../mainpage_images/facebook.png) no-repeat;
+}
+.sns li:nth-child(2) a{
+    background: url(../mainpage_images/instagram.png) no-repeat;
+}
+.sns li:nth-child(3) a{
+    background: url(../mainpage_images/youtube.png) no-repeat;
+}
+.sns li:hover a{
+    opacity: 1;
+}
+.link2 li:hover a{
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px rgba(84, 57, 57, 0.6);
+}
+.link2 li, .link a{
+    color: #543939;
+}
+.footer_inner ul{
+    display: inline-block;
+}
+.link2 li{
+    float: left;
+}
+.link3 li{
+    float: left;
+    
+}
+.link3{
+    text-align: center;
+    padding: 0px 30px;
+    
+}
+.line{
+    padding: 0px 20px;
+}
+/* top 버튼 */
+.top {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 100;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.top img{
+    display: block;
+}

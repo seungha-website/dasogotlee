@@ -1,0 +1,57 @@
+*{margin:0; padding:0;}
+
+/* 슬라이드배너 꾸미기 */
+.slide2 { 
+	width:100%; 
+	height:100%;
+	position: relative;
+	overflow: hidden;
+}
+.slide2 .swiper-slide {
+	text-align: center; 
+	font-size: 18px; 
+	background: #fff;
+}
+.slide2 .swiper-slide img{
+	display: block; 
+	width: 100%;
+}
+.slide2 .swiper-slide a{
+	display: block;
+	width: 100%;
+}
+.slide3 { 
+	width:100%; 
+	/* height: 651px */
+	position: relative;
+	overflow: hidden;
+}
+.slide3 .swiper-slide {
+	text-align: center; 
+	font-size: 18px; 
+	background: #fff;
+}
+.slide3 .swiper-slide img{
+	display: block; 
+	width: 100%;
+}
+.slide3 .swiper-slide a{
+	display: block;
+	width: 100%;
+}
+
+
+/*블릿버튼 영역*/
+.slide2 .swiper-pagination-bullet{background:#543939; width:23px; height:23px; opacity:0.5;}/* 블릿버튼 크기, 색상, 투명도 */
+.slide2 .swiper-pagination-bullet-active{opacity:1;} /* 블릿버튼 페이지 표시날 때 투명도 */
+.swiper-container-vertical > .swiper-pagination-bullets{right:20px;}/* 블릿버튼 위치 */
+
+/*이동버튼 영역*/
+.slide2 .swiper-button-next:after,
+.slide2 .swiper-button-prev:after{display:none;}/* 소스에 들어있는 버튼 삭제 */
+.slide2 .swiper-button-next,
+.slide2 .swiper-button-prev{width:50px; height:50px;}/* 버튼 크기 */
+.slide2 .swiper-button-prev{left:10px; background:url(../images/right.png);}/* 버튼 위치, 버튼 이미지 */
+.slide2 .swiper-button-next{right:10px; background:url(../images/left.png);}/* 버튼 위치, 버튼 이미지 */
+.slide2 .swiper-button-prev:hover{background:url(../images/prev_hover.png);}/* 버튼 호버 이미지 */
+.slide2 .swiper-button-next:hover{background:url(../images/next_hover.png);}/* 버튼 호버 이미지 */
