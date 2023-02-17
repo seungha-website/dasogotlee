@@ -58,11 +58,21 @@ h1, h2, h3, h4{
 }
 .opening img{
     display: block;
-    width: 100%;
+    width: 100%; 
     height: 100%;
+    opacity: 0.2;   
+}
+
+/* .opening img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
     opacity: 0.2;
     
-}
+} */
 
 
 .mainpage h2{
